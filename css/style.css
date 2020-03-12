@@ -905,7 +905,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .pricingTable .amount{
   font-size: 30px;
   position: absolute;
-  top: 15px;
+  top: 30px;
   left: -45px;
 }
 .pricingTable .month{
