@@ -509,7 +509,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services {
   background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url("../img/servicesnow.jpg") fixed center center;
   background-size: cover;
-  padding: 80px 0 60px 0;
+  padding: 80px 0 0 0;
 }
 
 #services .service-item {
@@ -523,6 +523,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 50%;
   transition: 0.5s;
   border: 1px solid #eb92a9;
+}
+.food{
+  transition: 0.5s;
+  border: 1px solid #eb92a9 ;
 }
 
 #services .service-icon i {
@@ -852,4 +856,222 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+
+
+/*------------------------------------------------------------------
+    PRICING TABLES
+-------------------------------------------------------------------*/
+
+.pricingTable{
+  background: #ffffff;
+  text-align: center;
+  padding-bottom: 30px;
+  transition: all 0.5s ease 0s;
+}
+.pricingTable:hover{
+  box-shadow: 0 10px 21px 0 rgba(0, 0, 0, 0.21);
+}
+.pricingTable .pricingTable-header{
+  padding: 20px 0 100px;
+  color: rgb(122, 115, 115);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+.pricingTable .title{
+  font-size: 20px;
+  font-weight: 200;
+  color: #eb92a9;
+  text-transform: capitalize;
+}
+.pricingTable .price-value{
+  width: 150px;
+  height: 150px;
+  border-radius: 40px;
+  background: #eb92a9;
+  position: absolute;
+  bottom: -60px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transform: rotate(45deg);
+}
+.pricingTable .value{
+  color: #fff;
+  transform: rotate(-45deg);
+  position: relative;
+}
+.pricingTable .amount{
+  font-size: 30px;
+  position: absolute;
+  top: 15px;
+  left: -45px;
+}
+.pricingTable .month{
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  top: 60px;
+  left: -40px;
+}
+.pricingTable .pricing-content{
+  list-style: none;
+  padding: 0;
+  margin: 100px 0 30px;
+  font-size: 13px;
+  color: #000;
+}
+.pricingTable .pricing-content li{
+  line-height: 24px;
+  position: relative;
+}
+.pricingTable .pricing-content li:before{
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  font-size: 20px;
+  color: #5a4091;
+  margin-right: 10px;
+}
+.pricingTable .pricingTable-signup{
+  display: inline-block;
+  letter-spacing:2px;
+background: #ffffff;
+font-size: 14px;
+padding: 10px 20px;
+color: #3a3a3a;
+box-shadow: 0 7px 10px #e6e6e6;
+  text-transform: uppercase;
+  transition: all 0.5s ease 0s;
+}
+.pricingTable .pricingTable-signup i{
+  font-size: 15px;
+  margin-right: 8px;
+}
+.pricingTable .pricingTable-signup:hover{
+color: #ffffff;
+}
+.packages{
+  display: inline-block;
+    letter-spacing: 2px;
+    background: #eb92a9;
+    font-size: 18px;
+    padding: 10px;
+    color: #000;
+    text-transform: uppercase;
+    transition: all 0.5s ease 0s;
+    white-space: normal;
+}
+@media only screen and (max-width:990px){
+  .pricingTable{ margin-bottom: 30px; }
+}
+
+
+
+.box{
+  text-align: center;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  overflow: hidden;
+  position: relative;
+}
+.box img{
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease 0s;
+}
+.box:hover img{
+  transform: scale(1.2);
+  filter: grayscale(100%);
+}
+.box .box-content{
+  width: 95%;
+  height: 95%;
+  background: rgba(0,0,0,0.8);
+  padding: 18% 10px 0;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 0.8s ease 0s;
+}
+.box:hover .box-content{ opacity: 1; }
+.box .title{
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+.box .post{
+  display: block;
+  font-size: 16px;
+  font-style: normal;
+  color: #432382;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.box .icon{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.box .icon li{ display: inline-block; }
+.box .icon li a{
+  display: block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+  margin-right: 11px;
+  position: relative;
+  transform: rotate(-45deg);
+  transition: all 0.4s ease-in-out;
+}
+.box .icon li a:hover{ background: #432382; }
+.box .icon li a span{ display: block; }
+.box .icon li a span i{ transform: rotate(45deg); }
+.box .icon li a:before,
+.box .icon li a:after,
+.box .icon li a span:before,
+.box .icon li a span:after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.4s ease-in-out 0s;
+}
+.box .icon li a span:before{
+  left: auto;
+  right: 0;
+}
+.box .icon li a span:after{
+  top: auto;
+  bottom: 0;
+}
+.box .icon li:nth-child(2) a:before,
+.box .icon li:nth-child(2) a:after,
+.box .icon li:nth-child(2) a span:before,
+.box .icon li:nth-child(2) a span:after{ transition-delay: 0.2s; }
+.box:hover .icon li a:before,
+.box:hover .icon li a span:before{
+  width: 3px;
+  height: 100%;
+}
+.box:hover .icon li a:after,
+.box:hover .icon li a span:after{
+  width: 100%;
+  height: 3px;
+}
+@media only screen and (max-width:990px){
+  .box{ margin-bottom: 30px; }
 }
